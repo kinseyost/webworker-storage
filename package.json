@@ -1,0 +1,56 @@
+{
+  "name": "immutable-redux-server",
+  "version": "1.0.0",
+  "description": "A server for a playground for working with react, redux, and immutablejs",
+  "scripts": {
+    "start": "nodemon ./src/index.js --exec babel-node --presets es2015,stage-2",
+    "debug": "nodemon ./src/index.js --exec babel-node --presets es2015,stage-2 --debug=5858",
+    "lint": "./node_modules/.bin/eslint src --max-warnings 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kinseyost/immutable-redux-server.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "hot",
+    "reload",
+    "live",
+    "edit",
+    "heroku",
+    "mongo",
+    "mongodb",
+    "socketio",
+    "web-sockets",
+    "socket-io",
+    "mongoose",
+    "nodemon"
+  ],
+  "author": "Kinsey Van Ost <kinsey.vanost@gmail.com> (http://github.com/kinseyost)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinseyost/immutable-redux/issues"
+  },
+  "homepage": "https://github.com/kinseyost/immutable-redux",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "eslint": "^2.10.2",
+    "eslint-plugin-import": "^1.8.0",
+    "nodemon": "^1.9.2"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.21",
+    "mongoose": "^4.5.3",
+    "redis": "^2.7.1",
+    "socket.io": "^2.0.1",
+    "socket.io-redis": "^5.0.1"
+  }
+}
