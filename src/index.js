@@ -17,14 +17,18 @@ const server = http.Server(app);
 const port = 8082;
 let shouldConnect = 0;
 
+app.get('/', (req, res) => {
+  res.status(200).send('<h1>Welcome to Storage</h1>');
+});
+
 app.post('/uploads', upload.array('files'), (req, res) => {
-  console.log('files', req.files);
+  const files = req.files;
+  console.log('Successfully uploaded', files.length, 'Files');
   res.status(200).send('Got the goods');
 });
 
 server.listen(port, () => {
   console.log(`listening on :${port}`);
-  
 });
 
 /* If running in docker use the container name, otherwise, localhost */
