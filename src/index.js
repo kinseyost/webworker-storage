@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.status(200).send('<h1>Welcome to Storage</h1>');
 });
 
-app.post('/uploads', upload.array('files'), (req, res) => {
+app.post('/uploads.json', upload.array('files'), (req, res) => {
   const files = req.files;
   console.log('Successfully uploaded', files.length, 'Files');
   res.status(200).send('Got the goods');
