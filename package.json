@@ -42,7 +42,7 @@
     "babel-preset-stage-2": "^6.11.0",
     "eslint": "^2.10.2",
     "eslint-plugin-import": "^1.8.0",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.14.8"
   },
   "dependencies": {
     "colors": "^1.1.2",
